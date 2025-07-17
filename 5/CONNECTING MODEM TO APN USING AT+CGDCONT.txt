@@ -1,0 +1,3 @@
+AT+CGDCONT command is used to setup apn(access point name) for a module,CGDCONT stands for cellular gprs data context,on a real modem ,we can setup apn connection using this command by telling the modem which apn to connect to,which ip to use and what protocol to use
+	its syntax is AT+CGDCONT=<cid>,<PDP_type><APN><PDP address>,cid stands for context id,pdp type stands for which protocol like ipv6 or ipv4 to use,apn stands for which internet provider to use.
+	for example in order to  connect modem to idea's internet,we can give AT+CGDCONT=1,"IP","idea.com",this will enable the modem to connect to internet using idea's APN.

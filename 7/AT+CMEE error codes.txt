@@ -1,0 +1,10 @@
+AT+CMEE t enables detailed error messages instead of a plain ERROR.
+it’s a debugging helper, not the source of the error — it's used with any other AT command to get specific feedback when something goes wrong.
+ AT Command              Response           Interpretation                                
+
+ AT+XYZ                  +CME ERROR: 4      Unsupported command                           
+ AT+CPIN=                +CME ERROR: 50     Missing or invalid parameter                  
+ AT+CMGS                 +CME ERROR: 512    SMS sending failed                            
+ AT+QISEND               +CME ERROR: 532    Cannot send data. Socket not opened           
+ AT+QIOPEN               +CME ERROR: 603    Invalid connection setup                      
+ AT+COPS                 +CME ERROR: 30     Operator/network not available                
